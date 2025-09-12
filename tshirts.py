@@ -1,4 +1,3 @@
-
 def size(cms):
     if cms < 38:
         return 'S'
@@ -7,8 +6,9 @@ def size(cms):
     else:
         return 'L'
 
+if __name__ == '__main__':
+    assert(size(37) == 'S')
+    assert(size(40) == 'M')
+    assert(size(43) == 'L')
+    print("All is well (maybe!)")
 
-assert(size(37) == 'S')
-assert(size(40) == 'M')
-assert(size(43) == 'L')
-print("All is well (maybe!)")
